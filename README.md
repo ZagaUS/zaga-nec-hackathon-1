@@ -2,13 +2,15 @@
 
 ## Data Structures & Logic
 
-Q1. Count Vowels Using Dictionary
+Q1. Rotate List by K Positions
 # Problem:
-Count each vowel in a string.
+Rotate a list to the right by k positions.
 # Sample Input:
-text = "artificial intelligence"
+arr = [10, 20, 30, 40, 50]
+k = 2
 # Sample Output:
-{'a': 2, 'i': 5, 'e': 3}
+[40, 50, 10, 20, 30]
+
 
 
 
@@ -18,17 +20,16 @@ ________________________________________
 
 ## Coding for ML Context
 
-Q1.  Drop Duplicate Records
+Q1. Feature Selection
 # Problem:
-Remove duplicate records based on id.
+Keep only numeric features.
 # Input:
 data = [
-    {"id": 1, "score": 80},
-    {"id": 2, "score": 90},
-    {"id": 1, "score": 80}
+    {"age": 25, "name": "A", "salary": 50000}
 ]
 # Output:
-[{'id': 1, 'score': 80}, {'id': 2, 'score': 90}]
+[{'age': 25, 'salary': 50000}]
+
 
 
 
@@ -38,22 +39,24 @@ ________________________________________
 
 ## ML Fundamentals
 
-Question 1 – Simple Class Imbalance Count
+Question 1 – Handling Missing Categorical Values
 # Problem:
-You are given a binary target variable churn. Count how many 1s and 0s exist.
+You are given a dataset of customers with job_role. Fill missing job_role with "Unknown" and encode as integers (assign unique integer per category).
 # Input:
 data = [
-    {"customer_id": 101, "churn": 1},
-    {"customer_id": 102, "churn": 0},
-    {"customer_id": 103, "churn": 1},
-    {"customer_id": 104, "churn": 0},
-    {"customer_id": 105, "churn": 1}
+    {"name": "Alice", "job_role": "Engineer"},
+    {"name": "Bob", "job_role": None},
+    {"name": "Charlie", "job_role": "Analyst"},
+    {"name": "David", "job_role": "Engineer"}
 ]
 # Output:
-Churn = 3
-No Churn = 2
-
-# Conceptual Question:
-Q: Why is it important to know class distribution before training a classification model?
+[
+ {'name': 'Alice', 'job_role': 0},
+ {'name': 'Bob', 'job_role': 2},
+ {'name': 'Charlie', 'job_role': 1},
+ {'name': 'David', 'job_role': 0}
+]
+# Conceptual Question:	
+Q: Why do we encode categorical variables as integers?
 
 
