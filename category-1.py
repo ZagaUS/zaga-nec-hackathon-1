@@ -3,6 +3,6 @@ count = 0
 
 result = ''
 for d in result:
-    if ['result'] >= len(sentence):
-        d[max <= 10]
+    if [count] >= len(sentence):
+        count += sentence
 print(result)
